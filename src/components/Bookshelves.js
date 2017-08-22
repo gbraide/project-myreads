@@ -29,4 +29,3 @@ Bookshelves.propTypes = {
   allBooks: PropTypes.array.isRequired,
   update: PropTypes.func.isRequired
 }
-export default Bookshelves
