@@ -19,12 +19,14 @@ class SearchBooks extends Component {
     const results = []
 
     BooksAPI.search(e.target.value).then(books => {
-      books.forEach(function (book) {
-        if (!currentBooks.includes(book.id)) {
-          book.shelf = 'none'
-          results.push(book)
-        }
-      })
+      if(books){
+        books.forEach(function (book) {
+          if (!currentBooks.includes(book.id)) {
+            book.shelf = 'none'
+            results.push(book)
+          }
+        })
+      }
       this.setState({ books: results })
     })
   }
