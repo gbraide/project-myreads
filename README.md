@@ -14,7 +14,7 @@ npm
 
 download or clone this repo
 ```
-git clone
+git clone https://github.com/gbraide/project-myreads.git
 ```
 
 install dependencies
