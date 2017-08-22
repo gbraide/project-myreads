@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import * as BooksAPI from '../BooksAPI';
 
 class Book extends Component { 
     constructor(props) {
@@ -10,8 +9,7 @@ class Book extends Component {
     }
     handleChange = (e) => {
         e.preventDefault()
-        BooksAPI.update(this.props.item, e.target.value);
-        this.props.update();
+        this.props.update(this.props.item, e.target.value);
     }
     render(){
         return(

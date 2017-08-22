@@ -1,8 +1,29 @@
+# My Reads
+
 This is a bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. 
 
-## Install
+The main page also has a link to a search page, which allows you to find books to add to your library.
+
+## Getting Started
+### Prerequisites
 ```
-To install, 
-- download or clone this repo
-- `npm install` at the root directory to install dependencies
-- `npm start` to launch application on localhost
+npm
+```
+
+### Installing
+
+download or clone this repo
+```
+git clone
+```
+
+install dependencies
+
+```
+npm install
+```
+
+launch application
+```
+npm start
+```
